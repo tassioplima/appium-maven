@@ -26,17 +26,11 @@ QA Mobile is made with Appium.
 
 ###ANDROID
 
-* ANDROID_OREO (Mobile Center)
 * ANDROID_OREO_DEV (Simulator)
-* ANDROID_LOLLIPOP_DEV (Simulator)
-
 
 ###IOS
 
-* IPHONE_6S (Mobile Center)
 * IPHONE_6S_DEV (Simulator)
-* IPHONE_8S_DEV (Simulator)
-
 
 ## Documentation
 
