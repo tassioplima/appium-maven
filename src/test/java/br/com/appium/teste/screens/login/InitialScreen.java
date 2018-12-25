@@ -1,6 +1,8 @@
 package br.com.appium.teste.screens.login;
 
 import br.com.appium.teste.screens.base.BaseScreen;
+import br.com.appium.teste.test.model.JSON;
+import br.com.appium.teste.test.model.JSONs;
 import io.appium.java_client.pagefactory.WithTimeout;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -8,7 +10,11 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 
 import java.util.concurrent.TimeUnit;
 
+
+
 public class InitialScreen extends BaseScreen {
+
+    public static JSON jSONLogged;
     
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Formulário']")
     private MobileElement clickFormulario;
