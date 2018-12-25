@@ -9,6 +9,7 @@ QA Mobile is made with Appium.
 * Appium Server 1.9.1
 * Maven 3.6.0
 * Android and iOS, Simulators or Devices
+* Variable environment Java, Maven and Android 
 
 ## Running Tests
 
