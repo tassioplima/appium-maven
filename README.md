@@ -5,7 +5,8 @@ QA Mobile is made with Appium.
 ## Components
 
 * Java 8
-* Appium 1.8.1
+* Appium Server 1.9.1
+* Appium cliente 4.1.2
 * Maven
 * Android and Ios Simulators or Devices
 
