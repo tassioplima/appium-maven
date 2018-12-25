@@ -11,11 +11,11 @@ import java.util.HashMap;
 public class Commons extends BaseScreen {
 
     public static void scroll(int startX, int startY, int endX, int endY) {
-        new TouchAction(DriverFactoryManager.getDriver()).press(startX, startY).waitAction().moveTo(endX, endY).release().waitAction().perform();
+       new TouchAction(DriverFactoryManager.getDriver()).press(endX, endY).waitAction().moveTo(endX, endY).release().waitAction().perform();
     }
 
-    public static void holdElement(MobileElement mobileElement) {
-        new TouchAction(DriverFactoryManager.getDriver()).longPress(mobileElement).perform();
+    public static void holdElement(MobileElement mobile) {
+        new TouchAction(DriverFactoryManager.getDriver()).longPress(mobile).perform();
     }
 
     public static void holdElementiOS(MobileElement element) {

@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(monochrome = true, snippets = SnippetType.CAMELCASE,
         features = "resources/features",
         glue = "br/com/appium/teste/steps/definitions",
-        tags = {"@teste01","~@unit", "~@notIntegrated"},
+        tags = {"@teste01"},
         plugin = {"io.qameta.allure.cucumberjvm.AllureCucumberJvm", "pretty"})
 
 public class CucumberRunnerTest {

@@ -14,7 +14,6 @@ public class TesteSteps {
         initialScreen = new InitialScreen();
     }
 
-
     @Dado("^que tenha  aberto o app$")
     public void que_tenha_aberto_o_app() {
     }

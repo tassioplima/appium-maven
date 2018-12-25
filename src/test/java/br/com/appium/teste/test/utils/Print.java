@@ -15,7 +15,7 @@ public class Print {
         File scrFile = ((TakesScreenshot) DriverFactoryManager.getDriver()).getScreenshotAs(OutputType.FILE);
 
         try {
-            FileUtils.copyFile(scrFile, (new File("./evidence", scenario.getName() + " - " + scenario.getStatus().toUpperCase() + ".png")));
+            FileUtils.copyFile(scrFile, (new File("./evidence", scenario.getName() + " - " + scenario.getStatus() + ".png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

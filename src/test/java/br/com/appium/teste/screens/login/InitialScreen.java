@@ -9,8 +9,7 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 import java.util.concurrent.TimeUnit;
 
 public class InitialScreen extends BaseScreen {
-
-    @WithTimeout(time = 5000, unit = TimeUnit.SECONDS)
+    
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Formulário']")
     private MobileElement clickFormulario;
 

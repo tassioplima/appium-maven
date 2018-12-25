@@ -1,5 +1,4 @@
 # language: pt
-
 @teste
 Funcionalidade: Teste appium
 
