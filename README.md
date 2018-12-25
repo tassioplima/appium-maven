@@ -15,7 +15,7 @@ QA Mobile is made with Appium.
 	
 2. Run implemented android tests: `$ mvn clean test -Dcucumber.options="--tags @teste01" -Denv.PLATAFORM=ANDROID_OREO_DEV`
 
-3. Run implemented ios tests: `$ mvn clean test -Dcucumber.options="--tags @implementedForIOS" -Denv.PLATAFORM=IPHONE_8_DEV`
+3. Run implemented ios tests: `$ mvn clean test -Dcucumber.options="--tags @teste01" -Denv.PLATAFORM=IPHONE_8_DEV`
 
 ## IMPORTANT
 
