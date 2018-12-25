@@ -1,4 +1,3 @@
-#QA Mobile
 
 QA Mobile is made with Appium.
 
