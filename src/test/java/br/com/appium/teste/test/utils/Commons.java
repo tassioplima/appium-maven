@@ -11,6 +11,7 @@ import java.util.HashMap;
 public class Commons extends BaseScreen {
 
     public static void scroll(int startX, int startY, int endX, int endY) {
+
        new TouchAction(DriverFactoryManager.getDriver()).press(endX, endY).waitAction().moveTo(endX, endY).release().waitAction().perform();
     }
 
