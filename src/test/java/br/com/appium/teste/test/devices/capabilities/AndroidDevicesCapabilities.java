@@ -9,6 +9,7 @@ public enum AndroidDevicesCapabilities {
 
 
     ANDROID_OREO("capabilities/android-oreo.json"),
+    ANDROID_PIE("capabilities/android-pie.json"),
     ANDROID_FISICO("capabilities/android-fisico.json");
 
 

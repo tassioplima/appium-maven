@@ -1,0 +1,11 @@
+{
+  "platformName": "Android",
+  "deviceName": "Device",
+  "platformVersion": "9.0",
+  "automationName": "UiAutomator2",
+  "udid": "emulator-5554",
+  "avd": "PIE_API_28",
+  "fullReset": true,
+  "newCommandTimeout": 5
+}
+

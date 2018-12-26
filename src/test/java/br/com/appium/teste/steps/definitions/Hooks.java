@@ -5,7 +5,6 @@ import br.com.appium.teste.test.utils.DriverFactoryManager;
 import br.com.appium.teste.test.utils.Print;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
-
 public class Hooks {
 
     @After

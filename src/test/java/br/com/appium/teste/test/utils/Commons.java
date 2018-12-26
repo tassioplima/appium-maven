@@ -3,20 +3,25 @@ package br.com.appium.teste.test.utils;
 import br.com.appium.teste.screens.base.BaseScreen;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.RemoteWebElement;
 
+import java.time.Duration;
 import java.util.HashMap;
 
 public class Commons extends BaseScreen {
 
-    public static void scroll(int startX, int startY, int endX, int endY) {
+    public static TouchAction action = new TouchAction(DriverFactoryManager.getDriver());
 
-       new TouchAction(DriverFactoryManager.getDriver()).press(endX, endY).waitAction().moveTo(endX, endY).release().waitAction().perform();
+    public static void swipe(int startX, int startY, int endX, int endY) {
+
+        action.press(PointOption.point(startX, startY)).waitAction(new WaitOptions().withDuration(Duration.ofMillis(600))).moveTo(PointOption.point(endX, endY)).release().perform();
     }
 
     public static void holdElement(MobileElement mobile) {
-        new TouchAction(DriverFactoryManager.getDriver()).longPress(mobile).perform();
+        //  new TouchAction(DriverFactoryManager.getDriver()).longPress(mobile).perform();
     }
 
     public static void holdElementiOS(MobileElement element) {
@@ -48,14 +53,6 @@ public class Commons extends BaseScreen {
         picker.put("offset", "0.15");
         picker.put("element", ((RemoteWebElement) element).getId());
         js.executeScript("mobile: selectPickerWheelValue", picker);
-    }
-
-    public static void swipe() {
-        new TouchAction(DriverFactoryManager.getDriver()).press(300, 1000).waitAction().moveTo(300, 50).release().perform();
-    }
-
-    public static void swipeInvert() {
-        new TouchAction(DriverFactoryManager.getDriver()).press(300, 50).waitAction().moveTo(300, 1000).release().perform();
     }
 
 }
